@@ -1,0 +1,36 @@
+//Variables
+
+$testfont: 1em;
+$mainheading: 'Lato', sans-serif;
+$icon-color:  #0275d8;
+$reset: 0;
+$base_h_one: 8em;
+$heading_four: #FFFFFF;
+$blue: #087378;
+
+//Mixins
+
+@mixin sub-heading {
+  font-family: "Lato", sans-serif;
+}
+
+@mixin shadow {
+  -webkit-filter: drop-shadow(16px 16px 10px rgba(0, 0, 0, 0.5));
+  filter: drop-shadow(16px 16px 10px rgba(0, 0, 0, 0.5));
+}
+
+//MAPS
+
+$bgdImages: (
+  about: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/435043/Bgd_Work_Blob_Yw.png),
+  work: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/435043/Bgd_Work_Blob_Yw.png),
+  interests: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/435043/materialdesign_clouds.png)
+);
+
+
+//FUNCTIONS
+
+// Returns the image for the specified bgd image name
+@function bgdImages($type) {
+  @return map-get($bgdImages, $type);
+}

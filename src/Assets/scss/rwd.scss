@@ -1,0 +1,51 @@
+@mixin mobile-screens() {
+  @media only screen and (max-device-width: 768px) {
+    @content;
+  }
+}
+
+@media only screen and (max-width: 600px) and (min-width: 320px) {
+
+.sidenav a {
+ display: inline;
+}
+
+.sidenav {
+overflow-y: hidden;
+overflow-x: visible;
+}
+
+}
+
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}
+
+ @media only screen and (max-width: 600px) and (min-width: 320px) {
+
+.sidenav a {
+ display: inline;
+}
+
+.sidenav {
+overflow-y: hidden;
+overflow-x: visible;
+}
+
+}
+
+
+@media only screen and (max-width: 600px) and (min-width: 320px) {
+
+.sidenav a {
+ display: inline;
+}
+
+.sidenav {
+overflow-y: hidden;
+overflow-x: visible;
+}
+
+}

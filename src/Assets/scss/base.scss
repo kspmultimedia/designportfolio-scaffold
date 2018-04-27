@@ -1,0 +1,241 @@
+@import 'variables_mixins_etc.scss';
+@import 'rwd.scss';
+
+
+//GENERAL
+
+.fa {color: $icon-color;}
+
+
+body {
+  padding-top: 54px;
+  font-family: "Lato", sans-serif;
+  background-color: #eee;
+        a {
+    color: orange;
+      }
+  }
+
+  /*body {
+    overflow-x: hidden;
+  } */
+
+
+/*#scroll {
+} */
+
+
+//BODY
+
+.main {
+    margin:  25vh 2vw 2vh 15vw;/* Same width as the sidebar + left position in px */
+    font-size: 28px; /* Increased text to enable scrolling */
+    padding: 0px 10px;
+}
+
+
+/*.work {
+  background: bgdImages(work);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  padding-top: 50vh;
+}
+
+.interests {
+  background: bgdImages(interests);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+  padding-top: 50vh;
+}
+
+//abt section
+
+.about {
+  background: bgdImages(about);
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 500px;
+} */
+
+.card {
+width: 250px;
+margin-top: 18vh;
+}
+
+#abt_icon_pic  {
+    margin-top: 18vh;
+      }
+
+#about_icon_cont {
+  color: $heading_four;
+}
+
+#h4.abt_icon_pic {
+    top: 35%;
+    left: 29%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    font-size: 2em;
+    }
+
+
+/*#abt_bio_img_container::after {
+content: "";
+opacity: 0;
+} */
+
+.card-img-overlay {
+  background-color:  rgba(0, 0, 0, 0);
+}
+//HEADER
+
+#heading-name {
+ color: $blue;
+ font-size: $base_h_one;
+
+ @include mobile-screens {
+   font-size: $base_h_one/3;
+   margin: 0 25vw;
+ }
+}
+
+#heading-subname {
+ @include sub-heading;
+ font-size: $base_h_one/3;
+ margin: 0 5vw;
+
+ @include mobile-screens {
+   font-size: $base_h_one/6;
+ }
+}
+
+.header {
+ background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/435043/Bgd_Work_Blob_Yw.png') no-repeat cover;
+ font-family: 'Playlist Script';
+ position: fixed;
+ top: 5vh;
+ left: 25vw;
+ padding-bottom: 50vh;
+ margin: 0 auto;
+ height: 50vh;
+}
+
+
+//NAV SIDEBAR
+
+.social-media img {
+  padding: 0.25em;
+  &:hover {
+    -webkit-filter: saturate(3);
+    filter: saturate(3);
+  }
+}
+
+#social-media {
+padding: 1em 0 0 1em;
+position: fixed;
+top: 1em;
+left: 1vh;
+margin: 0 auto;
+z-index: 1012;
+}
+
+//navigation
+
+.scrollspy-example {
+    overflow-y: hidden;
+    overflow-x: -moz-scrollbars-none;
+    position: fixed;
+    width: 100%;
+    height: 550px;
+    margin-left: 10vw;
+    margin-top: -25vh;
+    overflow: auto;
+    top: 70vh;
+    left: 5vw;
+    z-index: 1011;
+  }
+
+.scrollspy-example::-webkit-scrollbar {
+    display: none;
+}
+
+
+#spy {
+    width: 5vw;
+    height: 35vh;
+    padding-left: 5vw;
+    padding-top: 75vw;
+  }
+
+
+.nav {
+    width: 25%;
+    padding-left: 1vw;
+    padding-top: 75vh;
+    position: fixed;
+    top: -35vh;
+    left: 0vw;
+    z-index: 1009;
+  }
+
+  .nav-pills .nav-item.show .nav-link,
+  .nav-pills .nav-link.active {
+    color: #0275d8;
+    cursor: default;
+    background-color: #ffffff;
+    width: 100%;
+  }
+
+  span.message {
+    color: $icon-color;
+    font: {
+     family: $mainheading;
+     size: 24px;
+   }
+  }
+
+#message {
+    bottom: 15vh;
+    padding-left: 0;
+    position: fixed;
+          }
+
+a.message {margin-left: 2vw;}
+
+//MAIN
+
+
+.abt_rw {padding-top: 10vh;}
+
+
+// CODEPEN TEMPLATE - Vertical Nav, Auto Sidebar
+
+
+.sidenav::-webkit-scrollbar, .scrollspy-example::-webkit-appearance {
+    display: none;
+}
+.sidenav {
+    width: 15em;
+    position: fixed;
+    height: 110%;
+    z-index: 1010;
+    top: 15vh;
+    left: 0px;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #2196F3;
+    display: block;
+}
+
+.sidenav a:hover {
+    color: #064579;
+}

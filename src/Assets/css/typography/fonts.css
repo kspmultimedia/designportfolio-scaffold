@@ -1,0 +1,7 @@
+@font-face {
+	font-family: 'Playlist Script';
+	src: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/435043/Playlist-Script.eot');
+	src: local('☺'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/435043/Playlist%20Script.woff') format('woff'), url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/435043/Playlist%20Script.ttf') format('truetype');
+	font-weight: 700;
+	font-style: normal;
+}
